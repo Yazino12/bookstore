@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-
 import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';

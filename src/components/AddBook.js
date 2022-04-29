@@ -1,6 +1,5 @@
-/* eslint-disable react/prop-types */
-
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 const AddBook = (props) => {
   const [inputText, setInputText] = useState({
@@ -56,6 +55,10 @@ const AddBook = (props) => {
       </div>
     </form>
   );
+};
+
+AddBook.propTypes = {
+  addBookProps: PropTypes.func.isRequired,
 };
 
 export default AddBook;

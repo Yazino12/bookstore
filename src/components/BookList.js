@@ -1,6 +1,5 @@
-/* eslint-disable react/prop-types */
-
 import React from 'react';
+import PropTypes from 'prop-types';
 import Book from './Book';
 
 function BookList(props) {
@@ -13,5 +12,9 @@ function BookList(props) {
     </div>
   );
 }
+
+BookList.propTypes = {
+  books: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
+};
 
 export default BookList;
