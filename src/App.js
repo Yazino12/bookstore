@@ -1,10 +1,12 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import BookStore from './components/BookStore';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Bookstore</h1>
-    </div>
+    <Router>
+      <BookStore />
+    </Router>
   );
 }
 
